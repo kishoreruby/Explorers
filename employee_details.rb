@@ -3,7 +3,7 @@ puts "Enter name"
 name = gets.chomp
 puts "Enter age"
 age = gets.chomp
-puts "Enter age"
+puts "Enter address"
 address = gets.chomp
 
 puts "Employee Details:"
