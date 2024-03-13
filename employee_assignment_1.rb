@@ -6,3 +6,5 @@ puts "Enter employee department"
 department=gets.chomp
 
 puts "Employee name is #{name}, Employee age is #{age}, Employee department is #{department}"
+
+

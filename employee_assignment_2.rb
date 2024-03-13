@@ -34,3 +34,4 @@ stud=Student.new("Siddant","26","M","RoundRock")
 stud.details
 stud.marks(70,80,90)
 stud.grade
+
