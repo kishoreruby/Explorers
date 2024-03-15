@@ -21,7 +21,7 @@ def print_even_and_odd_numbers(array)
     odd_numbers = []
     #looping the array
     for num in array
-      # checking if number id even or not. Based on check pushing the number into array
+      # checking if number id even or not. Based on check, pushing the number into array
       if num.even?
         even_numbers.push(num)
       else
@@ -35,3 +35,24 @@ def print_even_and_odd_numbers(array)
 
   numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
   print_even_and_odd_numbers(numbers)
+
+#Sum of even and odd numbers in an array
+  def sum_of_even_and_odd(array)
+    sum_even = 0
+    sum_odd = 0
+    #looping the array
+    for num in array
+    # checking if number id even or not. Based on check, adding the number 
+      if num.even?
+        sum_even += num
+      else
+        sum_odd += num
+      end
+    end
+  
+    puts "Sum of even numbers: #{sum_even}"
+    puts "Sum of odd numbers: #{sum_odd}"
+  end
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+sum_of_even_and_odd(numbers)
