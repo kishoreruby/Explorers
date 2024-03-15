@@ -87,3 +87,37 @@ end
 
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 prime_numbers(numbers)
+
+
+def sum_prime_numbers(array)
+    prime_numbers = []
+    sum = 0
+    for num in array
+      is_prime = true
+  
+      if num <= 1
+        is_prime = false
+      else
+        # Check for divisors from 2 to the square root of the number
+        (2..Math.sqrt(num)).each do |divisor|
+          if num % divisor == 0
+            # If a divisor is found, the number is not prime
+            is_prime = false
+            break
+          end
+        end
+      end
+  
+      # Add the number to the prime_numbers array if it is prime
+      if is_prime
+        prime_numbers.push(num) 
+        sum += num
+      end  
+    end
+  
+    puts "Prime numbers: #{prime_numbers}"
+    puts "Sum of prime numbers: #{sum}"
+end
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+sum_prime_numbers(numbers)
