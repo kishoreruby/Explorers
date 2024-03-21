@@ -159,7 +159,31 @@ Arrays index based
 Array methods: length, size, count, first, last, take, push, unshift, insert(index, value), <<, pop, shift, delete, delete_at, delete_if
 
 
+Hash, Blocks (proc and lambda), Modules, meta programming, regex, exception handling, files
 
+key, value
+
+Hash.new
+
+Symbols vs String
+
+Block is a chunk of code
+
+1) elimenate the nil values from the array
+
+2) remove completely duplicate values in array
+  eg: arr = ['a', 'b', 'v', 'a', 'v', 'z', 'z', 'e']
+  o/p = [b, e]
+
+3) print values without duplicates in array
+  eg: arr = ['a', 'b', 'v', 'a', 'v', 'z', 'z', 'e']
+  o/p = [a, b, v, z, e]
+
+4) count the duplicate values in array
+  eg: arr = ['a', 'b', 'v', 'a', 'v', 'z', 'z', 'e']
+  o/p = {'a' => 2, 'b' => 1, 'v' => 2}
+
+5) [1, 2, [4, 6], [7, 8]] => [1, 2, 4, 6, 7, 8]
 
 
 
