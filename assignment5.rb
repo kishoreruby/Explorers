@@ -32,10 +32,18 @@ class Assignment5
         end
     end
     def palidrome_string(str)
-        if str==str.reverse
-            puts "#{str} is a palidrome string"
+        is_palindrome = true
+        length = str.length
+        (0...length/2).each do |i|
+          if str[i] != str[length-i-1]
+            is_palindrome = false
+            break
+          end
+        end
+        if is_palindrome
+            puts "#{str} is a palindrome string"
         else
-            puts "#{str} is not a palidrome string"
+            puts "#{str} is not a palindrome string"
         end
     end
     def fibonacci_loop(n)
