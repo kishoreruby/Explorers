@@ -4,6 +4,7 @@
 # step 2 --> Check number of digits in a given integer
 # step 4 --> Based on digits count write logic
 
+
 def check_numbers_arstrong(num)
   (1..num).each do |i|
     puts "#{i} is Armstrong number" if armstrong_number?(i)
